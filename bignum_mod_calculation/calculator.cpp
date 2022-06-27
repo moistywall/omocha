@@ -1,25 +1,15 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include "calculator.hpp"
 using namespace std;
 
-class CalcSet {
-    private:
-        int number;
-        int exponential;
-        int mod;
-    public:
-        CalcSet();
-        void GetNum();
-        int calculation();
-};
 
 CalcSet::CalcSet() {
     number = 9726;
     exponential = 3533;
     mod = 11413;
 }
-
 
 void CalcSet::GetNum() {
     cout<<"a^m = b (mod n) の形の式における b を求めます．\n" ;
@@ -68,12 +58,5 @@ int CalcSet::calculation() {
     }
     cout<<"計算結果: "<<buff<<endl;
 
-    return 0;
-}
-
-int main() {
-    CalcSet calc;
-    calc.GetNum();
-    int huga = calc.calculation();
     return 0;
 }
