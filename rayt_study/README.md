@@ -2,6 +2,8 @@
 
 cargo run [番号] とコマンドを打つことでレイトレーシング画像のレンダリングがされる． 番号は0~3．
 
+rustの実行環境が必要．
+
 # cargo run 1
 
 ![0](render/render0.png)
